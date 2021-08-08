@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "type": "field",
+      "input": "email",
+      "property": "email",
+      "label": {
+        "en": "Email",
+        "fr": "E-mail"
+      },
+      "order": 3
+    },
+    {
+      "type": "header",
+      "order": 0,
+      "text": {
+        "en": "Enter your details below to win a prize!"
+      }
+    },
+    {
+      "type": "paragraph",
+      "order": 1,
+      "text": {
+        "en": "You can win £5, £10, £20 or a trip to Disneyland"
+      }
+    },
+    {
+      "type": "field",
+      "input": "checkbox",
+      "order": 5,
+      "property": "terms_and_conditions",
+      "label": {
+        "en": "Terms and conditions",
+        "fr": "Termes et conditions"
+      }
+    },
+    {
+      "type": "field",
+      "input": "text",
+      "order": 2,
+      "property": "name",
+      "label": {
+        "en": "Name",
+        "fr": "Nom"
+      }
+    },
+    {
+      "type": "field",
+      "input": "datepicker",
+      "order": 4,
+      "property": "dob",
+      "label": {
+        "en": "Date of birth",
+        "fr": "Date de naissance"
+      }
+    }
+  ]
+}

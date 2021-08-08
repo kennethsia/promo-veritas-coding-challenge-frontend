@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "terms_and_conditions": true,
+      "email": "test@test.com",
+      "name": "Cillian",
+      "dob": "10-06-1989"
+    }
+  ],
+  "required": [],
+  "properties": {
+    "terms_and_conditions": {
+      "$id": "#/properties/terms_and_conditions",
+      "type": "boolean",
+      "title": "The terms_and_conditions schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [true]
+    },
+    "email": {
+      "$id": "#/properties/email",
+      "default": "",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": ["test@test.com"],
+      "title": "The email schema",
+      "pattern": "^[A-Za-z]*@gmail.com$",
+      "type": "string"
+    },
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string",
+      "title": "The name schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["Cillian"]
+    },
+    "dob": {
+      "$id": "#/properties/dob",
+      "default": "",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": ["1989-10-06"],
+      "title": "The dob schema",
+      "pattern": "^[0-9]{4}(-)(((0)[0-9])|((1)[0-2]))(-)([0-2][0-9]|(3)[0-1])$",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
